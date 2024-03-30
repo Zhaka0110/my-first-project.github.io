@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    background: #081b29;
+    color: #ededed;
+    font-family: 'Poppins', sans-serif; 
+    overflow-y: auto; 
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active { 
+    color: aqua;
+}
+
+.home {
+    min-height: 100vh; 
+    background: url(img/web.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+}
+.about,
+.resume,
+.gallery,
+.contacts {
+    min-height: 100vh;
+    background: url(img/web2.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 50px 0; 
+}
+
+.home-content,
+.about-content,
+.resume-content,
+.gallery-content,
+.contacts-content {
+    max-width: 600px; 
+    margin: auto; 
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+}
+.about-content h1,
+.resume-content h1,
+.gallery-content h1,
+.contacts-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.resume-content h2,{
+    font-size: 56px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.home-content h3,
+.about-content h3,
+.resume-content h3,
+.contacts-content h3
+ {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.home-content p,
+.about-content p,
+.resume-content p,
+.contacts-content p {
+    font-size: 16px;
+    color: #ededed;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 10px;
+    font-size: 1.6rem;
+    border: 2px solid transparent;
+}
+
+nav a:hover {
+    background: #333;
+}
+
+.btn-box a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Footer Styles */
+footer {
+    background: #081b29;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.photos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Разрешаем перенос элементов на следующую строку */
+}
+
+.photos li {
+    border: 5px solid white;
+    width: 8cm; 
+    height: 8cm; 
+    box-sizing: border-box; 
+    overflow: hidden; 
+}
+
+.photos li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
